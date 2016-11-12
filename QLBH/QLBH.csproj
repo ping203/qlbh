@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2DBE8686-7116-4D41-B75F-B344604705D3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QLBH</RootNamespace>
+    <AssemblyName>QLBH</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MySql.Data.6.9.9\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySqlBackup">
+      <HintPath>..\packages\MySqlBackup.NET.2.0.9.4\lib\net45\MySqlBackup.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common.cs" />
+    <Compile Include="DataSetReport.cs">
+      <DependentUpon>DataSetReport.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSetReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FormBCBanHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBCBanHang.designer.cs">
+      <DependentUpon>FormBCBanHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBCChi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBCChi.designer.cs">
+      <DependentUpon>FormBCChi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBCThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBCThu.designer.cs">
+      <DependentUpon>FormBCThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCaiDatMysql.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCaiDatMysql.designer.cs">
+      <DependentUpon>FormCaiDatMysql.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCTHangHoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCTHangHoa.designer.cs">
+      <DependentUpon>FormCTHangHoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCTHHoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCTHHoa.designer.cs">
+      <DependentUpon>FormCTHHoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCTPhaiThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCTPhaiThu.designer.cs">
+      <DependentUpon>FormCTPhaiThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCTPhaiTra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCTPhaiTra.designer.cs">
+      <DependentUpon>FormCTPhaiTra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDangNhap.Designer.cs">
+      <DependentUpon>FormDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHangHoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHangHoa.Designer.cs">
+      <DependentUpon>FormHangHoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKhachHang.designer.cs">
+      <DependentUpon>FormKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenu.Designer.cs">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNhaCungCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNhaCungCap.designer.cs">
+      <DependentUpon>FormNhaCungCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNhapKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNhapKho.designer.cs">
+      <DependentUpon>FormNhapKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNoHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNoHang.designer.cs">
+      <DependentUpon>FormNoHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPhaiThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPhaiThu.designer.cs">
+      <DependentUpon>FormPhaiThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPhaiTra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPhaiTra.designer.cs">
+      <DependentUpon>FormPhaiTra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPhieuChi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPhieuChi.designer.cs">
+      <DependentUpon>FormPhieuChi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPhieuNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPhieuNhap.designer.cs">
+      <DependentUpon>FormPhieuNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPhieuThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPhieuThu.designer.cs">
+      <DependentUpon>FormPhieuThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPhieuXuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPhieuXuat.Designer.cs">
+      <DependentUpon>FormPhieuXuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQuanLyNoHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQuanLyNoHang.designer.cs">
+      <DependentUpon>FormQuanLyNoHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQuanLyTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQuanLyTaiKhoan.designer.cs">
+      <DependentUpon>FormQuanLyTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSuaPhieuChi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSuaPhieuChi.designer.cs">
+      <DependentUpon>FormSuaPhieuChi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSuaPhieuNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSuaPhieuNhap.designer.cs">
+      <DependentUpon>FormSuaPhieuNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSuaPhieuThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSuaPhieuThu.designer.cs">
+      <DependentUpon>FormSuaPhieuThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSuaPhieuXuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSuaPhieuXuat.designer.cs">
+      <DependentUpon>FormSuaPhieuXuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTonKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTonKho.designer.cs">
+      <DependentUpon>FormTonKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormXuatKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormXuatKho.designer.cs">
+      <DependentUpon>FormXuatKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ini.cs" />
+    <Compile Include="KetNoi.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLBHDataSet.cs">
+      <DependentUpon>QLBHDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="QLBHDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLBHDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormBCBanHang.resx">
+      <DependentUpon>FormBCBanHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBCChi.resx">
+      <DependentUpon>FormBCChi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBCThu.resx">
+      <DependentUpon>FormBCThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCaiDatMysql.resx">
+      <DependentUpon>FormCaiDatMysql.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCTHangHoa.resx">
+      <DependentUpon>FormCTHangHoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCTHHoa.resx">
+      <DependentUpon>FormCTHHoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCTPhaiThu.resx">
+      <DependentUpon>FormCTPhaiThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCTPhaiTra.resx">
+      <DependentUpon>FormCTPhaiTra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDangNhap.resx">
+      <DependentUpon>FormDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHangHoa.resx">
+      <DependentUpon>FormHangHoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKhachHang.resx">
+      <DependentUpon>FormKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenu.resx">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNhaCungCap.resx">
+      <DependentUpon>FormNhaCungCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNhapKho.resx">
+      <DependentUpon>FormNhapKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNoHang.resx">
+      <DependentUpon>FormNoHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPhaiThu.resx">
+      <DependentUpon>FormPhaiThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPhaiTra.resx">
+      <DependentUpon>FormPhaiTra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPhieuChi.resx">
+      <DependentUpon>FormPhieuChi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPhieuNhap.resx">
+      <DependentUpon>FormPhieuNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPhieuThu.resx">
+      <DependentUpon>FormPhieuThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPhieuXuat.resx">
+      <DependentUpon>FormPhieuXuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQuanLyNoHang.resx">
+      <DependentUpon>FormQuanLyNoHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQuanLyTaiKhoan.resx">
+      <DependentUpon>FormQuanLyTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSuaPhieuChi.resx">
+      <DependentUpon>FormSuaPhieuChi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSuaPhieuNhap.resx">
+      <DependentUpon>FormSuaPhieuNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSuaPhieuThu.resx">
+      <DependentUpon>FormSuaPhieuThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSuaPhieuXuat.resx">
+      <DependentUpon>FormSuaPhieuXuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTonKho.resx">
+      <DependentUpon>FormTonKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormXuatKho.resx">
+      <DependentUpon>FormXuatKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ReportBCBanHang.rdlc" />
+    <EmbeddedResource Include="ReportBCChi.rdlc" />
+    <EmbeddedResource Include="ReportBCThu.rdlc" />
+    <EmbeddedResource Include="ReportCTHangHoa.rdlc" />
+    <EmbeddedResource Include="ReportCTNhapHang.rdlc" />
+    <EmbeddedResource Include="ReportCTNoPhaiThu.rdlc" />
+    <EmbeddedResource Include="ReportCTNoPhaiTra.rdlc" />
+    <EmbeddedResource Include="ReportCTXuatHang.rdlc" />
+    <EmbeddedResource Include="ReportNoPhaiThu.rdlc" />
+    <EmbeddedResource Include="ReportNoPhaiTra.rdlc" />
+    <EmbeddedResource Include="ReportPhieuChi.rdlc" />
+    <EmbeddedResource Include="ReportPhieuNhap.rdlc" />
+    <EmbeddedResource Include="ReportPhieuThu.rdlc" />
+    <EmbeddedResource Include="ReportPhieuXuat.rdlc" />
+    <EmbeddedResource Include="ReportTonKho.rdlc" />
+    <None Include="DataSetReport.xsc">
+      <DependentUpon>DataSetReport.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetReport.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetReport.xss">
+      <DependentUpon>DataSetReport.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="QLBHDataSet.xsc">
+      <DependentUpon>QLBHDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLBHDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLBHDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="QLBHDataSet.xss">
+      <DependentUpon>QLBHDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
