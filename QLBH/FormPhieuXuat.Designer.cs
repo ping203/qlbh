@@ -1293,7 +1293,6 @@
             this.txtSoHieu.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSoHieu.Location = new System.Drawing.Point(544, 32);
             this.txtSoHieu.Name = "txtSoHieu";
-            this.txtSoHieu.ReadOnly = true;
             this.txtSoHieu.Size = new System.Drawing.Size(114, 19);
             this.txtSoHieu.TabIndex = 2004;
             this.txtSoHieu.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSoHieu_KeyDown);
@@ -1536,13 +1535,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1008, 730);
-            this.Controls.Add(this.reportViewerPhieuXuat);
             this.Controls.Add(this.btnXemPhieu);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.btnHuy);
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.gbxPhieuXuat);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.reportViewerPhieuXuat);
             this.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MinimizeBox = false;
             this.Name = "FormPhieuXuat";

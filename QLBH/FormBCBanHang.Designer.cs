@@ -31,10 +31,11 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.Label label4;
             System.Windows.Forms.Label label2;
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             System.Windows.Forms.Label label6;
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataTableReportBCBanHangBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataSetReport = new QLBH.DataSetReport();
             this.label1 = new System.Windows.Forms.Label();
@@ -117,6 +118,15 @@
             // 
             this.dataSetReport.DataSetName = "DataSetReport";
             this.dataSetReport.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new System.Drawing.Point(698, 656);
+            label6.Name = "label6";
+            label6.Size = new System.Drawing.Size(302, 16);
+            label6.TabIndex = 2019;
+            label6.Text = "Tổng Tiền:  ........................................................";
             // 
             // label1
             // 
@@ -407,18 +417,11 @@
             this.txtTongTien.TabIndex = 2020;
             this.txtTongTien.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new System.Drawing.Point(698, 656);
-            label6.Name = "label6";
-            label6.Size = new System.Drawing.Size(302, 16);
-            label6.TabIndex = 2019;
-            label6.Text = "Tổng Tiền:  ........................................................";
-            // 
             // ngayXuatDataGridViewTextBoxColumn
             // 
             this.ngayXuatDataGridViewTextBoxColumn.DataPropertyName = "NgayXuat";
+            dataGridViewCellStyle1.Format = "dd/MM/yyyy";
+            this.ngayXuatDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
             this.ngayXuatDataGridViewTextBoxColumn.FillWeight = 75F;
             this.ngayXuatDataGridViewTextBoxColumn.HeaderText = "Ngày Xuất";
             this.ngayXuatDataGridViewTextBoxColumn.Name = "ngayXuatDataGridViewTextBoxColumn";
@@ -450,10 +453,10 @@
             // soLuongDataGridViewTextBoxColumn
             // 
             this.soLuongDataGridViewTextBoxColumn.DataPropertyName = "SoLuong";
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle1.Format = "###,###,###,##0";
-            dataGridViewCellStyle1.NullValue = "0";
-            this.soLuongDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle2.Format = "###,###,###,##0";
+            dataGridViewCellStyle2.NullValue = "0";
+            this.soLuongDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
             this.soLuongDataGridViewTextBoxColumn.FillWeight = 80F;
             this.soLuongDataGridViewTextBoxColumn.HeaderText = "Số Lượng";
             this.soLuongDataGridViewTextBoxColumn.Name = "soLuongDataGridViewTextBoxColumn";
@@ -477,10 +480,10 @@
             // ThanhTien
             // 
             this.ThanhTien.DataPropertyName = "ThanhTien";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle2.Format = "###,###,###,##0";
-            dataGridViewCellStyle2.NullValue = "0";
-            this.ThanhTien.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle3.Format = "###,###,###,##0";
+            dataGridViewCellStyle3.NullValue = "0";
+            this.ThanhTien.DefaultCellStyle = dataGridViewCellStyle3;
             this.ThanhTien.FillWeight = 80F;
             this.ThanhTien.HeaderText = "Thành Tiền";
             this.ThanhTien.Name = "ThanhTien";

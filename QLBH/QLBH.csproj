@@ -122,6 +122,12 @@
     <Compile Include="FormDangNhap.Designer.cs">
       <DependentUpon>FormDangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormDoanhThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDoanhThu.designer.cs">
+      <DependentUpon>FormDoanhThu.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormHangHoa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -282,6 +288,9 @@
     <EmbeddedResource Include="FormDangNhap.resx">
       <DependentUpon>FormDangNhap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormDoanhThu.resx">
+      <DependentUpon>FormDoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormHangHoa.resx">
       <DependentUpon>FormHangHoa.cs</DependentUpon>
     </EmbeddedResource>
@@ -359,6 +368,7 @@
     <EmbeddedResource Include="ReportCTNoPhaiThu.rdlc" />
     <EmbeddedResource Include="ReportCTNoPhaiTra.rdlc" />
     <EmbeddedResource Include="ReportCTXuatHang.rdlc" />
+    <EmbeddedResource Include="ReportDoanhThu.rdlc" />
     <EmbeddedResource Include="ReportNoPhaiThu.rdlc" />
     <EmbeddedResource Include="ReportNoPhaiTra.rdlc" />
     <EmbeddedResource Include="ReportPhieuChi.rdlc" />

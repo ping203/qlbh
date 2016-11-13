@@ -452,7 +452,7 @@
         <Top>3.50357cm</Top>
         <Left>19.63407cm</Left>
         <Height>0.6cm</Height>
-        <Width>1.71081cm</Width>
+        <Width>1.84201cm</Width>
         <ZIndex>11</ZIndex>
         <Style>
           <Border>
@@ -487,7 +487,7 @@
         <Top>4.67046cm</Top>
         <Left>19.63407cm</Left>
         <Height>0.6cm</Height>
-        <Width>1.71081cm</Width>
+        <Width>1.84201cm</Width>
         <ZIndex>12</ZIndex>
         <Style>
           <Border>
@@ -522,7 +522,7 @@
         <Top>5.2539cm</Top>
         <Left>19.63407cm</Left>
         <Height>0.6cm</Height>
-        <Width>1.71081cm</Width>
+        <Width>1.84201cm</Width>
         <ZIndex>13</ZIndex>
         <Style>
           <Border>
@@ -557,7 +557,7 @@
         <Top>4.08702cm</Top>
         <Left>19.63407cm</Left>
         <Height>0.6cm</Height>
-        <Width>1.71081cm</Width>
+        <Width>1.84201cm</Width>
         <ZIndex>14</ZIndex>
         <Style>
           <Border>
@@ -602,7 +602,7 @@
         </Paragraphs>
         <rd:DefaultName>TenKhachHang</rd:DefaultName>
         <Top>3.51876cm</Top>
-        <Left>21.33497cm</Left>
+        <Left>21.49372cm</Left>
         <Height>0.6cm</Height>
         <Width>3.4306cm</Width>
         <ZIndex>15</ZIndex>
@@ -649,7 +649,7 @@
         </Paragraphs>
         <rd:DefaultName>TenKhachHang</rd:DefaultName>
         <Top>4.68565cm</Top>
-        <Left>21.33497cm</Left>
+        <Left>21.49372cm</Left>
         <Height>0.6cm</Height>
         <Width>3.4306cm</Width>
         <ZIndex>16</ZIndex>
@@ -696,7 +696,7 @@
         </Paragraphs>
         <rd:DefaultName>TenKhachHang</rd:DefaultName>
         <Top>5.26909cm</Top>
-        <Left>21.33497cm</Left>
+        <Left>21.49372cm</Left>
         <Height>0.6cm</Height>
         <Width>3.4306cm</Width>
         <ZIndex>17</ZIndex>
@@ -743,7 +743,7 @@
         </Paragraphs>
         <rd:DefaultName>TenKhachHang</rd:DefaultName>
         <Top>4.10221cm</Top>
-        <Left>21.33497cm</Left>
+        <Left>21.49372cm</Left>
         <Height>0.6cm</Height>
         <Width>3.4306cm</Width>
         <ZIndex>18</ZIndex>
@@ -765,7 +765,7 @@
               <Width>0.97477cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.43466cm</Width>
+              <Width>3.14362cm</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>2.68521cm</Width>
@@ -774,22 +774,16 @@
               <Width>2.79104cm</Width>
             </TablixColumn>
             <TablixColumn>
+              <Width>9.80707cm</Width>
+            </TablixColumn>
+            <TablixColumn>
               <Width>2.57938cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.85332cm</Width>
+              <Width>2.87042cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.47996cm</Width>
-            </TablixColumn>
-            <TablixColumn>
-              <Width>2.63229cm</Width>
-            </TablixColumn>
-            <TablixColumn>
-              <Width>2.8175cm</Width>
-            </TablixColumn>
-            <TablixColumn>
-              <Width>3.53188cm</Width>
+              <Width>2.5cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -841,7 +835,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Ngày, Tháng, Năm</Value>
+                              <Value>Ngày Lập</Value>
                               <Style>
                                 <FontFamily>times New Roman</FontFamily>
                                 <FontWeight>Bold</FontWeight>
@@ -942,6 +936,42 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
+                    <Textbox Name="Textbox10">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Diễn Giải</Value>
+                              <Style>
+                                <FontFamily>times New Roman</FontFamily>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox10</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>LightGrey</BackgroundColor>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
                     <Textbox Name="Textbox9">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
@@ -962,78 +992,6 @@
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox9</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Style>Solid</Style>
-                        </Border>
-                        <BackgroundColor>LightGrey</BackgroundColor>
-                        <VerticalAlign>Middle</VerticalAlign>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="Textbox21">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>Đơn Giá</Value>
-                              <Style>
-                                <FontFamily>times New Roman</FontFamily>
-                                <FontWeight>Bold</FontWeight>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style>
-                            <TextAlign>Center</TextAlign>
-                          </Style>
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>Textbox21</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Style>Solid</Style>
-                        </Border>
-                        <BackgroundColor>LightGrey</BackgroundColor>
-                        <VerticalAlign>Middle</VerticalAlign>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="Textbox23">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>Thành Tiền</Value>
-                              <Style>
-                                <FontFamily>times New Roman</FontFamily>
-                                <FontWeight>Bold</FontWeight>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style>
-                            <TextAlign>Center</TextAlign>
-                          </Style>
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>Textbox23</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -1086,14 +1044,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox39">
+                    <Textbox Name="Textbox12">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Đơn Giá</Value>
+                              <Value>Tồn Đầu Kỳ</Value>
                               <Style>
                                 <FontFamily>times New Roman</FontFamily>
                                 <FontWeight>Bold</FontWeight>
@@ -1105,43 +1063,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox39</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Style>Solid</Style>
-                        </Border>
-                        <BackgroundColor>LightGrey</BackgroundColor>
-                        <VerticalAlign>Middle</VerticalAlign>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="Textbox36">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>Thành Tiền</Value>
-                              <Style>
-                                <FontFamily>times New Roman</FontFamily>
-                                <FontWeight>Bold</FontWeight>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style>
-                            <TextAlign>Center</TextAlign>
-                          </Style>
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>Textbox36</rd:DefaultName>
+                      <rd:DefaultName>Textbox12</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -1293,6 +1215,50 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
+                    <Textbox Name="TenNhaCC">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value xml:space="preserve"> </Value>
+                              <Style>
+                                <FontFamily>times New Roman</FontFamily>
+                              </Style>
+                            </TextRun>
+                            <TextRun>
+                              <Value>=Fields!TenNhaCC.Value</Value>
+                              <Style>
+                                <FontFamily>times New Roman</FontFamily>
+                              </Style>
+                            </TextRun>
+                            <TextRun>
+                              <Value xml:space="preserve"> </Value>
+                              <Style>
+                                <FontFamily>times New Roman</FontFamily>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>TenNhaCC</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>Solid</Style>
+                        </Border>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <PaddingLeft>1pt</PaddingLeft>
+                        <PaddingRight>1pt</PaddingRight>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
                     <Textbox Name="SoLuong">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
@@ -1320,86 +1286,6 @@
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>SoLuong</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Style>Solid</Style>
-                        </Border>
-                        <VerticalAlign>Middle</VerticalAlign>
-                        <PaddingLeft>1pt</PaddingLeft>
-                        <PaddingRight>1pt</PaddingRight>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="DonGia">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>=Fields!DonGia.Value</Value>
-                              <Style>
-                                <FontFamily>times New Roman</FontFamily>
-                                <Format>#,0;(#,0)</Format>
-                              </Style>
-                            </TextRun>
-                            <TextRun>
-                              <Value xml:space="preserve"> </Value>
-                              <Style>
-                                <FontFamily>times New Roman</FontFamily>
-                                <Format>#,0;(#,0)</Format>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style>
-                            <TextAlign>Right</TextAlign>
-                          </Style>
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>DonGia</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Style>Solid</Style>
-                        </Border>
-                        <VerticalAlign>Middle</VerticalAlign>
-                        <PaddingLeft>1pt</PaddingLeft>
-                        <PaddingRight>1pt</PaddingRight>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="ThanhTien">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>=Fields!ThanhTien.Value</Value>
-                              <Style>
-                                <FontFamily>times New Roman</FontFamily>
-                                <Format>#,0;(#,0)</Format>
-                              </Style>
-                            </TextRun>
-                            <TextRun>
-                              <Value xml:space="preserve"> </Value>
-                              <Style>
-                                <FontFamily>times New Roman</FontFamily>
-                                <Format>#,0;(#,0)</Format>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style>
-                            <TextAlign>Right</TextAlign>
-                          </Style>
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>ThanhTien</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -1452,14 +1338,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="DonGiaXuat">
+                    <Textbox Name="TonKhoDK">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!DonGiaXuat.Value</Value>
+                              <Value>=Fields!TonKhoDK.Value</Value>
                               <Style>
                                 <FontFamily>times New Roman</FontFamily>
                                 <Format>#,0;(#,0)</Format>
@@ -1477,46 +1363,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>DonGiaXuat</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Style>Solid</Style>
-                        </Border>
-                        <VerticalAlign>Middle</VerticalAlign>
-                        <PaddingLeft>1pt</PaddingLeft>
-                        <PaddingRight>1pt</PaddingRight>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="ThanhTienXuat">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>=Fields!ThanhTienXuat.Value</Value>
-                              <Style>
-                                <FontFamily>times New Roman</FontFamily>
-                                <Format>#,0;(#,0)</Format>
-                              </Style>
-                            </TextRun>
-                            <TextRun>
-                              <Value xml:space="preserve"> </Value>
-                              <Style>
-                                <FontFamily>times New Roman</FontFamily>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style>
-                            <TextAlign>Right</TextAlign>
-                          </Style>
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>ThanhTienXuat</rd:DefaultName>
+                      <rd:DefaultName>TonKhoDK</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -1542,7 +1389,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>TỔNG TIỀN</Value>
+                              <Value>TỔNG CỘNG</Value>
                               <Style>
                                 <FontFamily>times New Roman</FontFamily>
                                 <FontWeight>Bold</FontWeight>
@@ -1564,10 +1411,9 @@
                         <PaddingRight>1pt</PaddingRight>
                       </Style>
                     </Textbox>
-                    <ColSpan>6</ColSpan>
+                    <ColSpan>5</ColSpan>
                   </CellContents>
                 </TablixCell>
-                <TablixCell />
                 <TablixCell />
                 <TablixCell />
                 <TablixCell />
@@ -1581,7 +1427,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Sum(Fields!ThanhTien.Value)</Value>
+                              <Value>=Sum(Fields!SoLuong.Value)</Value>
                               <Style>
                                 <FontFamily>times New Roman</FontFamily>
                                 <FontWeight>Bold</FontWeight>
@@ -1593,7 +1439,6 @@
                               <Style>
                                 <FontFamily>times New Roman</FontFamily>
                                 <FontWeight>Bold</FontWeight>
-                                <Format>#,0;(#,0)</Format>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -1623,7 +1468,15 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Sum(Fields!ThanhTienXuat.Value)</Value>
+                              <Value>=Sum(Fields!SoLuongXuat.Value)</Value>
+                              <Style>
+                                <FontFamily>times New Roman</FontFamily>
+                                <FontWeight>Bold</FontWeight>
+                                <Format>#,0;(#,0)</Format>
+                              </Style>
+                            </TextRun>
+                            <TextRun>
+                              <Value xml:space="preserve"> </Value>
                               <Style>
                                 <FontFamily>times New Roman</FontFamily>
                                 <FontWeight>Bold</FontWeight>
@@ -1646,19 +1499,58 @@
                         <PaddingRight>1pt</PaddingRight>
                       </Style>
                     </Textbox>
-                    <ColSpan>3</ColSpan>
                   </CellContents>
                 </TablixCell>
-                <TablixCell />
-                <TablixCell />
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox14">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=First(Fields!TonKho.Value, "DataSetCTHangHoa")</Value>
+                              <Style>
+                                <FontStyle>Normal</FontStyle>
+                                <FontFamily>times New Roman</FontFamily>
+                                <FontWeight>Bold</FontWeight>
+                                <Format>#,0;(#,0)</Format>
+                              </Style>
+                            </TextRun>
+                            <TextRun>
+                              <Value xml:space="preserve"> </Value>
+                              <Style>
+                                <FontStyle>Normal</FontStyle>
+                                <FontFamily>times New Roman</FontFamily>
+                                <FontWeight>Bold</FontWeight>
+                                <Format>#,0;(#,0)</Format>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Right</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox14</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>Solid</Style>
+                        </Border>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <PaddingLeft>1pt</PaddingLeft>
+                        <PaddingRight>1pt</PaddingRight>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
               </TablixCells>
             </TablixRow>
           </TablixRows>
         </TablixBody>
         <TablixColumnHierarchy>
           <TablixMembers>
-            <TablixMember />
-            <TablixMember />
             <TablixMember />
             <TablixMember />
             <TablixMember />
@@ -1686,7 +1578,7 @@
         <Top>5.99501cm</Top>
         <Left>0.78738cm</Left>
         <Height>2.2cm</Height>
-        <Width>27.78cm</Width>
+        <Width>27.3515cm</Width>
         <ZIndex>19</ZIndex>
         <Style>
           <Border>
@@ -1698,7 +1590,7 @@
     <Height>8.19501cm</Height>
     <Style />
   </Body>
-  <Width>28.56738cm</Width>
+  <Width>28.56739cm</Width>
   <Page>
     <PageHeight>21cm</PageHeight>
     <PageWidth>29.7cm</PageWidth>
@@ -1774,24 +1666,8 @@
           <DataField>SoLuong</DataField>
           <rd:TypeName>System.Double</rd:TypeName>
         </Field>
-        <Field Name="DonGia">
-          <DataField>DonGia</DataField>
-          <rd:TypeName>System.Double</rd:TypeName>
-        </Field>
-        <Field Name="ThanhTien">
-          <DataField>ThanhTien</DataField>
-          <rd:TypeName>System.Double</rd:TypeName>
-        </Field>
         <Field Name="SoLuongXuat">
           <DataField>SoLuongXuat</DataField>
-          <rd:TypeName>System.Double</rd:TypeName>
-        </Field>
-        <Field Name="DonGiaXuat">
-          <DataField>DonGiaXuat</DataField>
-          <rd:TypeName>System.Double</rd:TypeName>
-        </Field>
-        <Field Name="ThanhTienXuat">
-          <DataField>ThanhTienXuat</DataField>
           <rd:TypeName>System.Double</rd:TypeName>
         </Field>
         <Field Name="NgayNhap">
@@ -1800,6 +1676,14 @@
         </Field>
         <Field Name="GiaXuat">
           <DataField>GiaXuat</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="TenNhaCC">
+          <DataField>TenNhaCC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TonKhoDK">
+          <DataField>TonKhoDK</DataField>
           <rd:TypeName>System.Double</rd:TypeName>
         </Field>
       </Fields>

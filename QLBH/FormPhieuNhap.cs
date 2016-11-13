@@ -766,7 +766,7 @@ namespace QLBH
 
         private void LuuPhieuNhap()
         {
-            phieunhaphangTableAdapter.UpdatePhieuNhap(dtpNgayLap.Value,
+            phieunhaphangTableAdapter.UpdatePhieuNhap(      dtpNgayLap.Value,
                                                             txtSoHieu.Text,
                                                             myIdNhaCC,
                                                             txtTenNhaCC.Text,

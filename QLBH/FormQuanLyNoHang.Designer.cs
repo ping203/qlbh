@@ -34,6 +34,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.nohangDataGridView = new System.Windows.Forms.DataGridView();
             this.nohangBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -246,6 +247,8 @@
             // NgayXuat
             // 
             this.NgayXuat.DataPropertyName = "NgayXuat";
+            dataGridViewCellStyle1.Format = "dd/MM/yyyy";
+            this.NgayXuat.DefaultCellStyle = dataGridViewCellStyle1;
             this.NgayXuat.FillWeight = 85F;
             this.NgayXuat.HeaderText = "Ngày Xuất";
             this.NgayXuat.Name = "NgayXuat";
@@ -319,10 +322,10 @@
             // SoLuong
             // 
             this.SoLuong.DataPropertyName = "SoLuong";
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle1.Format = "###,###,###,##0";
-            dataGridViewCellStyle1.NullValue = "0";
-            this.SoLuong.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle2.Format = "###,###,###,##0";
+            dataGridViewCellStyle2.NullValue = "0";
+            this.SoLuong.DefaultCellStyle = dataGridViewCellStyle2;
             this.SoLuong.FillWeight = 60F;
             this.SoLuong.HeaderText = "SL";
             this.SoLuong.Name = "SoLuong";
@@ -331,10 +334,10 @@
             // SoLuongNo
             // 
             this.SoLuongNo.DataPropertyName = "SoLuongNo";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle2.Format = "###,###,###,##0";
-            dataGridViewCellStyle2.NullValue = "0";
-            this.SoLuongNo.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle3.Format = "###,###,###,##0";
+            dataGridViewCellStyle3.NullValue = "0";
+            this.SoLuongNo.DefaultCellStyle = dataGridViewCellStyle3;
             this.SoLuongNo.FillWeight = 65F;
             this.SoLuongNo.HeaderText = "SL Nợ";
             this.SoLuongNo.Name = "SoLuongNo";
@@ -343,8 +346,8 @@
             // No
             // 
             this.No.DataPropertyName = "No";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.No.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.No.DefaultCellStyle = dataGridViewCellStyle4;
             this.No.FillWeight = 30F;
             this.No.HeaderText = "Nợ";
             this.No.Name = "No";
@@ -353,8 +356,8 @@
             // Tra
             // 
             this.Tra.DataPropertyName = "Tra";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Tra.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Tra.DefaultCellStyle = dataGridViewCellStyle5;
             this.Tra.FillWeight = 30F;
             this.Tra.HeaderText = "Trả";
             this.Tra.Name = "Tra";
@@ -363,8 +366,8 @@
             // Tru
             // 
             this.Tru.DataPropertyName = "Tru";
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Tru.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Tru.DefaultCellStyle = dataGridViewCellStyle6;
             this.Tru.FillWeight = 30F;
             this.Tru.HeaderText = "Trừ";
             this.Tru.Name = "Tru";

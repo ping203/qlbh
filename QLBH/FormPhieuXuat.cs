@@ -1205,7 +1205,7 @@ namespace QLBH
             sh = sh + 100000001;
             string a = sh.ToString();
             string sohieu = "PT-" + a.Substring(2);
-            string lydo = "Trả tiền hàng ngày " + lableB_NgayHT.Text;
+            string lydo = "Trả tiền hàng " + lableB_NgayHT.Text;
             string vbc = Common.So_chu(Convert.ToDouble(txtConNo.Text));
             string user = Common.User;
             if (myEdit == false)

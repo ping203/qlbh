@@ -123,6 +123,7 @@ namespace QLBH
             CloseOpenedForm("FormPhaiThu");
             CloseOpenedForm("FormPhaiTra");
             CloseOpenedForm("FormBCBanHang");
+            CloseOpenedForm("FormDoanhThu");
         }
 
         private void danhMụcKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
@@ -563,6 +564,33 @@ namespace QLBH
                     else
                     {
                         form = new FormBCBanHang();
+                        form.Show();
+
+                    }
+                }
+                else MessageBox.Show("Bạn không có quyền truy cập !!!");
+                Cursor.Current = Cursors.Default;
+            }
+            catch
+            {
+                MessageBox.Show("Lỗi kết nối");
+            }
+        }
+
+        private void báoCáoLợiNhuậnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Cursor.Current = Cursors.WaitCursor;
+                if (Common.UserId == 1)
+                {
+                    CloseAllOpenForm();
+                    Form form = GetOpenedForm("FormDoanhThu");
+                    if (form != null)
+                        form.Activate();
+                    else
+                    {
+                        form = new FormDoanhThu();
                         form.Show();
 
                     }

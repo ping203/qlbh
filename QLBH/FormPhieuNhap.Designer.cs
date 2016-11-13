@@ -54,15 +54,16 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            this.DataTableReportPhieuNhapBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.DataSetReport = new QLBH.DataSetReport();
             this.label1 = new System.Windows.Forms.Label();
-            this.phieunhaphangBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.qLBHDataSet = new QLBH.QLBHDataSet();
             this.gbxPhieuNhap = new System.Windows.Forms.GroupBox();
             this.btnNhaCCMoi = new System.Windows.Forms.Button();
             this.dataGridViewShow = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phieunhaphangctBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.qLBHDataSet = new QLBH.QLBHDataSet();
             this.nhacungcapDataGridView = new System.Windows.Forms.DataGridView();
             this.TenNhaCC1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoDienThoai1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -123,18 +124,17 @@
             this.btnThem = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
+            this.btnXemPhieu = new System.Windows.Forms.Button();
+            this.reportViewerPhieuNhap = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.contextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.ẩnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.DataTableReportPhieuNhapTableAdapter = new QLBH.DataSetReportTableAdapters.DataTableReportPhieuNhapTableAdapter();
+            this.phieunhaphangBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tableAdapterManager = new QLBH.QLBHDataSetTableAdapters.TableAdapterManager();
             this.nhacungcapTableAdapter = new QLBH.QLBHDataSetTableAdapters.nhacungcapTableAdapter();
             this.phieunhaphangTableAdapter = new QLBH.QLBHDataSetTableAdapters.phieunhaphangTableAdapter();
             this.phieunhaphangctTableAdapter = new QLBH.QLBHDataSetTableAdapters.phieunhaphangctTableAdapter();
             this.hanghoaTableAdapter = new QLBH.QLBHDataSetTableAdapters.hanghoaTableAdapter();
-            this.btnXemPhieu = new System.Windows.Forms.Button();
-            this.reportViewerPhieuNhap = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.DataSetReport = new QLBH.DataSetReport();
-            this.DataTableReportPhieuNhapBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.DataTableReportPhieuNhapTableAdapter = new QLBH.DataSetReportTableAdapters.DataTableReportPhieuNhapTableAdapter();
-            this.contextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.ẩnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             tenHangLabel = new System.Windows.Forms.Label();
             label2 = new System.Windows.Forms.Label();
             label3 = new System.Windows.Forms.Label();
@@ -153,20 +153,20 @@
             label16 = new System.Windows.Forms.Label();
             label17 = new System.Windows.Forms.Label();
             label18 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.phieunhaphangBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLBHDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataTableReportPhieuNhapBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataSetReport)).BeginInit();
             this.gbxPhieuNhap.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewShow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.phieunhaphangctBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLBHDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nhacungcapDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nhacungcapBindingSource)).BeginInit();
             this.gbxPhieuNhapCT.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hanghoaDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hanghoaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ctphieunhapDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DataSetReport)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DataTableReportPhieuNhapBindingSource)).BeginInit();
             this.contextMenuStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.phieunhaphangBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tenHangLabel
@@ -336,6 +336,16 @@
             label18.TabIndex = 18;
             label18.Text = "Thành Tiền:  ...............................................";
             // 
+            // DataTableReportPhieuNhapBindingSource
+            // 
+            this.DataTableReportPhieuNhapBindingSource.DataMember = "DataTableReportPhieuNhap";
+            this.DataTableReportPhieuNhapBindingSource.DataSource = this.DataSetReport;
+            // 
+            // DataSetReport
+            // 
+            this.DataSetReport.DataSetName = "DataSetReport";
+            this.DataSetReport.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -346,16 +356,6 @@
             this.label1.Size = new System.Drawing.Size(304, 40);
             this.label1.TabIndex = 0;
             this.label1.Text = "PHIẾU NHẬP KHO";
-            // 
-            // phieunhaphangBindingSource
-            // 
-            this.phieunhaphangBindingSource.DataMember = "phieunhaphang";
-            this.phieunhaphangBindingSource.DataSource = this.qLBHDataSet;
-            // 
-            // qLBHDataSet
-            // 
-            this.qLBHDataSet.DataSetName = "QLBHDataSet";
-            this.qLBHDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // gbxPhieuNhap
             // 
@@ -449,6 +449,11 @@
             // 
             this.phieunhaphangctBindingSource.DataMember = "phieunhaphangct";
             this.phieunhaphangctBindingSource.DataSource = this.qLBHDataSet;
+            // 
+            // qLBHDataSet
+            // 
+            this.qLBHDataSet.DataSetName = "QLBHDataSet";
+            this.qLBHDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // nhacungcapDataGridView
             // 
@@ -987,7 +992,6 @@
             this.txtSoHieu.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSoHieu.Location = new System.Drawing.Point(518, 48);
             this.txtSoHieu.Name = "txtSoHieu";
-            this.txtSoHieu.ReadOnly = true;
             this.txtSoHieu.Size = new System.Drawing.Size(127, 19);
             this.txtSoHieu.TabIndex = 2004;
             this.txtSoHieu.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSoHieu_KeyDown);
@@ -1086,7 +1090,6 @@
             // 
             // dtpNgayLap
             // 
-            this.dtpNgayLap.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpNgayLap.Location = new System.Drawing.Point(440, 22);
             this.dtpNgayLap.Name = "dtpNgayLap";
             this.dtpNgayLap.Size = new System.Drawing.Size(18, 26);
@@ -1129,6 +1132,54 @@
             this.btnLuu.UseVisualStyleBackColor = true;
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
+            // btnXemPhieu
+            // 
+            this.btnXemPhieu.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXemPhieu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnXemPhieu.Location = new System.Drawing.Point(169, 624);
+            this.btnXemPhieu.Name = "btnXemPhieu";
+            this.btnXemPhieu.Size = new System.Drawing.Size(90, 46);
+            this.btnXemPhieu.TabIndex = 24;
+            this.btnXemPhieu.Text = "Xem Phiếu";
+            this.btnXemPhieu.UseVisualStyleBackColor = true;
+            this.btnXemPhieu.Click += new System.EventHandler(this.btnXemPhieu_Click);
+            // 
+            // reportViewerPhieuNhap
+            // 
+            this.reportViewerPhieuNhap.ContextMenuStrip = this.contextMenuStrip;
+            reportDataSource1.Name = "DataSetPhieuNhap";
+            reportDataSource1.Value = this.DataTableReportPhieuNhapBindingSource;
+            this.reportViewerPhieuNhap.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewerPhieuNhap.LocalReport.ReportEmbeddedResource = "QLBH.ReportPhieuNhap.rdlc";
+            this.reportViewerPhieuNhap.Location = new System.Drawing.Point(12, 52);
+            this.reportViewerPhieuNhap.Name = "reportViewerPhieuNhap";
+            this.reportViewerPhieuNhap.Size = new System.Drawing.Size(984, 618);
+            this.reportViewerPhieuNhap.TabIndex = 25;
+            this.reportViewerPhieuNhap.Visible = false;
+            // 
+            // contextMenuStrip
+            // 
+            this.contextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ẩnToolStripMenuItem});
+            this.contextMenuStrip.Name = "contextMenuStrip1";
+            this.contextMenuStrip.Size = new System.Drawing.Size(90, 26);
+            // 
+            // ẩnToolStripMenuItem
+            // 
+            this.ẩnToolStripMenuItem.Name = "ẩnToolStripMenuItem";
+            this.ẩnToolStripMenuItem.Size = new System.Drawing.Size(89, 22);
+            this.ẩnToolStripMenuItem.Text = "Ẩn";
+            this.ẩnToolStripMenuItem.Click += new System.EventHandler(this.ẩnToolStripMenuItem_Click);
+            // 
+            // DataTableReportPhieuNhapTableAdapter
+            // 
+            this.DataTableReportPhieuNhapTableAdapter.ClearBeforeFill = true;
+            // 
+            // phieunhaphangBindingSource
+            // 
+            this.phieunhaphangBindingSource.DataMember = "phieunhaphang";
+            this.phieunhaphangBindingSource.DataSource = this.qLBHDataSet;
+            // 
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
@@ -1163,59 +1214,6 @@
             // 
             this.hanghoaTableAdapter.ClearBeforeFill = true;
             // 
-            // btnXemPhieu
-            // 
-            this.btnXemPhieu.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXemPhieu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnXemPhieu.Location = new System.Drawing.Point(169, 624);
-            this.btnXemPhieu.Name = "btnXemPhieu";
-            this.btnXemPhieu.Size = new System.Drawing.Size(90, 46);
-            this.btnXemPhieu.TabIndex = 24;
-            this.btnXemPhieu.Text = "Xem Phiếu";
-            this.btnXemPhieu.UseVisualStyleBackColor = true;
-            this.btnXemPhieu.Click += new System.EventHandler(this.btnXemPhieu_Click);
-            // 
-            // reportViewerPhieuNhap
-            // 
-            this.reportViewerPhieuNhap.ContextMenuStrip = this.contextMenuStrip;
-            reportDataSource1.Name = "DataSetPhieuNhap";
-            reportDataSource1.Value = this.DataTableReportPhieuNhapBindingSource;
-            this.reportViewerPhieuNhap.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewerPhieuNhap.LocalReport.ReportEmbeddedResource = "QLBH.ReportPhieuNhap.rdlc";
-            this.reportViewerPhieuNhap.Location = new System.Drawing.Point(12, 52);
-            this.reportViewerPhieuNhap.Name = "reportViewerPhieuNhap";
-            this.reportViewerPhieuNhap.Size = new System.Drawing.Size(984, 618);
-            this.reportViewerPhieuNhap.TabIndex = 25;
-            this.reportViewerPhieuNhap.Visible = false;
-            // 
-            // DataSetReport
-            // 
-            this.DataSetReport.DataSetName = "DataSetReport";
-            this.DataSetReport.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // DataTableReportPhieuNhapBindingSource
-            // 
-            this.DataTableReportPhieuNhapBindingSource.DataMember = "DataTableReportPhieuNhap";
-            this.DataTableReportPhieuNhapBindingSource.DataSource = this.DataSetReport;
-            // 
-            // DataTableReportPhieuNhapTableAdapter
-            // 
-            this.DataTableReportPhieuNhapTableAdapter.ClearBeforeFill = true;
-            // 
-            // contextMenuStrip
-            // 
-            this.contextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ẩnToolStripMenuItem});
-            this.contextMenuStrip.Name = "contextMenuStrip1";
-            this.contextMenuStrip.Size = new System.Drawing.Size(153, 48);
-            // 
-            // ẩnToolStripMenuItem
-            // 
-            this.ẩnToolStripMenuItem.Name = "ẩnToolStripMenuItem";
-            this.ẩnToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.ẩnToolStripMenuItem.Text = "Ẩn";
-            this.ẩnToolStripMenuItem.Click += new System.EventHandler(this.ẩnToolStripMenuItem_Click);
-            // 
             // FormPhieuNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -1236,12 +1234,13 @@
             this.Text = "Quản lý hàng hóa";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormPhieuChi_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.phieunhaphangBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLBHDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataTableReportPhieuNhapBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataSetReport)).EndInit();
             this.gbxPhieuNhap.ResumeLayout(false);
             this.gbxPhieuNhap.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewShow)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.phieunhaphangctBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLBHDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nhacungcapDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nhacungcapBindingSource)).EndInit();
             this.gbxPhieuNhapCT.ResumeLayout(false);
@@ -1249,9 +1248,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.hanghoaDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hanghoaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ctphieunhapDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DataSetReport)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DataTableReportPhieuNhapBindingSource)).EndInit();
             this.contextMenuStrip.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.phieunhaphangBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

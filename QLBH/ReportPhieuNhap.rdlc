@@ -188,7 +188,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox6</rd:DefaultName>
         <Top>1.05814cm</Top>
-        <Left>11.47974cm</Left>
+        <Left>11.05641cm</Left>
         <Height>1.06487cm</Height>
         <Width>8.0245cm</Width>
         <ZIndex>5</ZIndex>
@@ -257,7 +257,7 @@
         <Top>7.85088cm</Top>
         <Left>13.03549cm</Left>
         <Height>0.5cm</Height>
-        <Width>6.46875cm</Width>
+        <Width>6.04542cm</Width>
         <ZIndex>6</ZIndex>
         <Style>
           <Border>
@@ -336,7 +336,7 @@
         <Top>3.30941cm</Top>
         <Left>2.2987cm</Left>
         <Height>0.6cm</Height>
-        <Width>18.30855cm</Width>
+        <Width>16.78221cm</Width>
         <ZIndex>8</ZIndex>
         <Style>
           <Border>
@@ -379,7 +379,7 @@
         <Top>3.86694cm</Top>
         <Left>2.2987cm</Left>
         <Height>0.6cm</Height>
-        <Width>18.30855cm</Width>
+        <Width>16.78221cm</Width>
         <ZIndex>9</ZIndex>
         <Style>
           <Border>
@@ -422,7 +422,7 @@
         <Top>4.42446cm</Top>
         <Left>2.2987cm</Left>
         <Height>0.6cm</Height>
-        <Width>18.30855cm</Width>
+        <Width>16.78221cm</Width>
         <ZIndex>10</ZIndex>
         <Style>
           <Border>
@@ -439,28 +439,28 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>0.95644cm</Width>
-            </TablixColumn>
-            <TablixColumn>
-              <Width>2.5cm</Width>
-            </TablixColumn>
-            <TablixColumn>
-              <Width>7.35937cm</Width>
-            </TablixColumn>
-            <TablixColumn>
-              <Width>1.67979cm</Width>
-            </TablixColumn>
-            <TablixColumn>
-              <Width>2.5cm</Width>
-            </TablixColumn>
-            <TablixColumn>
-              <Width>1.1996cm</Width>
-            </TablixColumn>
-            <TablixColumn>
-              <Width>1.96814cm</Width>
+              <Width>1.14826cm</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>2.10313cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>6.51601cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>1.57726cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>2.39747cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>0.81427cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>1.86561cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>2.0006cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -1288,9 +1288,9 @@
         </TablixRowHierarchy>
         <DataSetName>DataSetPhieuNhap</DataSetName>
         <Top>5.17208cm</Top>
-        <Left>0.34078cm</Left>
+        <Left>0.65828cm</Left>
         <Height>2cm</Height>
-        <Width>20.26647cm</Width>
+        <Width>18.42263cm</Width>
         <ZIndex>11</ZIndex>
         <Style>
           <Border>
@@ -1324,9 +1324,9 @@
         </Paragraphs>
         <rd:DefaultName>VBC</rd:DefaultName>
         <Top>7.38928cm</Top>
-        <Left>0.34078cm</Left>
+        <Left>0.65828cm</Left>
         <Height>0.45cm</Height>
-        <Width>20.26647cm</Width>
+        <Width>18.42263cm</Width>
         <ZIndex>12</ZIndex>
         <Style>
           <Border>
@@ -1388,7 +1388,7 @@
         <Top>8.38263cm</Top>
         <Left>13.03549cm</Left>
         <Height>0.5cm</Height>
-        <Width>6.46875cm</Width>
+        <Width>6.04542cm</Width>
         <ZIndex>14</ZIndex>
         <Style>
           <Border>
@@ -1399,10 +1399,10 @@
         </Style>
       </Textbox>
       <Line Name="Line1">
-        <Top>10.5145cm</Top>
+        <Top>10.197cm</Top>
         <Left>0.34078cm</Left>
         <Height>0cm</Height>
-        <Width>20.26647cm</Width>
+        <Width>18.74013cm</Width>
         <ZIndex>15</ZIndex>
         <Style>
           <Border>
@@ -1411,17 +1411,17 @@
         </Style>
       </Line>
     </ReportItems>
-    <Height>10.62033cm</Height>
+    <Height>10.22346cm</Height>
     <Style />
   </Body>
-  <Width>20.60725cm</Width>
+  <Width>19.15204cm</Width>
   <Page>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>
-    <LeftMargin>0cm</LeftMargin>
-    <RightMargin>0cm</RightMargin>
-    <TopMargin>0cm</TopMargin>
-    <BottomMargin>0cm</BottomMargin>
+    <LeftMargin>0.5cm</LeftMargin>
+    <RightMargin>0.5cm</RightMargin>
+    <TopMargin>1.5cm</TopMargin>
+    <BottomMargin>1.5cm</BottomMargin>
     <ColumnSpacing>1.27cm</ColumnSpacing>
     <Style />
   </Page>

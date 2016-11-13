@@ -43,6 +43,7 @@ namespace QLBH
         {
             dtpTuNgay.Value = DateTime.Now;
             dtpDenNgay.Value = DateTime.Now;
+            //DateTime dn = dtpDenNgay.Value.AddHours(24);
             this.dataTableReportCTHangHoaTableAdapter.FillByIdHangHoa(this.dataSetReport.DataTableReportCTHangHoa,
                                                                                                          dtpTuNgay.Text,
                                                                                                          dtpDenNgay.Text,
@@ -95,8 +96,8 @@ namespace QLBH
                 decimal STNhap = 0;
                 for (int i = 0; i < ctxuathanghoaDataGridView.RowCount; i++)
                 {
-                    STXuat += Convert.ToDecimal(ctxuathanghoaDataGridView.Rows[i].Cells["ThanhTienXuat"].Value);
-                    STNhap += Convert.ToDecimal(ctxuathanghoaDataGridView.Rows[i].Cells["ThanhTienNhap"].Value);
+                    STXuat += Convert.ToDecimal(ctxuathanghoaDataGridView.Rows[i].Cells["SoLuongXuat"].Value);
+                    STNhap += Convert.ToDecimal(ctxuathanghoaDataGridView.Rows[i].Cells["SoLuongNhap"].Value);
                 }
                 txtTienXuat.Text = STXuat.ToString();
                 txtTienXuat.Text = string.Format("{0:n0}", double.Parse(txtTienXuat.Text));

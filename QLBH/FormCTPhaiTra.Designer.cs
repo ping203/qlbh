@@ -34,10 +34,11 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.dataTableReportCTNoPhaiTraBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataSetReport = new QLBH.DataSetReport();
             this.label1 = new System.Windows.Forms.Label();
             this.ctnophaithuDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataTableReportCTNoPhaiTraBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lableB_NgayHT = new System.Windows.Forms.TextBox();
             this.dtpTuNgay = new System.Windows.Forms.DateTimePicker();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -72,9 +73,9 @@
             this.tuNgayDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.denNgayDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             label6 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTableReportCTNoPhaiTraBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetReport)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ctnophaithuDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataTableReportCTNoPhaiTraBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLBHDataSet)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,6 +87,11 @@
             label6.Size = new System.Drawing.Size(302, 16);
             label6.TabIndex = 2017;
             label6.Text = "Tổng Tiền:  ........................................................";
+            // 
+            // dataTableReportCTNoPhaiTraBindingSource
+            // 
+            this.dataTableReportCTNoPhaiTraBindingSource.DataMember = "DataTableReportCTNoPhaiTra";
+            this.dataTableReportCTNoPhaiTraBindingSource.DataSource = this.dataSetReport;
             // 
             // dataSetReport
             // 
@@ -137,11 +143,6 @@
             this.ctnophaithuDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.ctnophaithuDataGridView.Size = new System.Drawing.Size(996, 504);
             this.ctnophaithuDataGridView.TabIndex = 2;
-            // 
-            // dataTableReportCTNoPhaiTraBindingSource
-            // 
-            this.dataTableReportCTNoPhaiTraBindingSource.DataMember = "DataTableReportCTNoPhaiTra";
-            this.dataTableReportCTNoPhaiTraBindingSource.DataSource = this.dataSetReport;
             // 
             // lableB_NgayHT
             // 
@@ -372,6 +373,8 @@
             // ngayNhapDataGridViewTextBoxColumn
             // 
             this.ngayNhapDataGridViewTextBoxColumn.DataPropertyName = "NgayNhap";
+            dataGridViewCellStyle1.Format = "dd/MM/yyyy";
+            this.ngayNhapDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
             this.ngayNhapDataGridViewTextBoxColumn.FillWeight = 70F;
             this.ngayNhapDataGridViewTextBoxColumn.HeaderText = "Ngày Nhập";
             this.ngayNhapDataGridViewTextBoxColumn.Name = "ngayNhapDataGridViewTextBoxColumn";
@@ -412,10 +415,10 @@
             // soLuongDataGridViewTextBoxColumn
             // 
             this.soLuongDataGridViewTextBoxColumn.DataPropertyName = "SoLuong";
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle1.Format = "###,###,###,##0";
-            dataGridViewCellStyle1.NullValue = "0";
-            this.soLuongDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle2.Format = "###,###,###,##0";
+            dataGridViewCellStyle2.NullValue = "0";
+            this.soLuongDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
             this.soLuongDataGridViewTextBoxColumn.FillWeight = 70F;
             this.soLuongDataGridViewTextBoxColumn.HeaderText = "Số Lượng";
             this.soLuongDataGridViewTextBoxColumn.Name = "soLuongDataGridViewTextBoxColumn";
@@ -424,10 +427,10 @@
             // donGiaDataGridViewTextBoxColumn
             // 
             this.donGiaDataGridViewTextBoxColumn.DataPropertyName = "DonGia";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle2.Format = "###,###,###,##0";
-            dataGridViewCellStyle2.NullValue = "0";
-            this.donGiaDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle3.Format = "###,###,###,##0";
+            dataGridViewCellStyle3.NullValue = "0";
+            this.donGiaDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
             this.donGiaDataGridViewTextBoxColumn.FillWeight = 70F;
             this.donGiaDataGridViewTextBoxColumn.HeaderText = "Đơn Giá";
             this.donGiaDataGridViewTextBoxColumn.Name = "donGiaDataGridViewTextBoxColumn";
@@ -436,10 +439,10 @@
             // ThanhTien
             // 
             this.ThanhTien.DataPropertyName = "ThanhTien";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle3.Format = "###,###,###,##0";
-            dataGridViewCellStyle3.NullValue = "0";
-            this.ThanhTien.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle4.Format = "###,###,###,##0";
+            dataGridViewCellStyle4.NullValue = "0";
+            this.ThanhTien.DefaultCellStyle = dataGridViewCellStyle4;
             this.ThanhTien.FillWeight = 70F;
             this.ThanhTien.HeaderText = "Thành Tiền";
             this.ThanhTien.Name = "ThanhTien";
@@ -490,9 +493,9 @@
             this.Text = "Quản lý hàng hóa";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormHangHoa_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataTableReportCTNoPhaiTraBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetReport)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ctnophaithuDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataTableReportCTNoPhaiTraBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLBHDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
